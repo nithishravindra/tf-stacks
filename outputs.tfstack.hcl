@@ -1,5 +1,5 @@
-output "lambda_urls" {
-    type = string
-    description = "dsfasd"
-    value = "lol"
+output "random" {
+  type        = string
+  description = "random string"
+  value       = component.random.randomwstring
 }

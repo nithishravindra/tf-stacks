@@ -1,9 +1,10 @@
-component "local_commands" {
-  source = "./local-commands"
+component "random" {
+  source = "./random"
   inputs = {
-    environment = "dev"
+    environment   = var.environment
+    another_input = var.another_input
   }
   providers = {
-    random  = provider.random.this
+    random = provider.random.this
   }
 }

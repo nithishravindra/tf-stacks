@@ -1,21 +1,9 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
-variable "regions" {
-  type = set(string)
+variable "environment" {
+  description = "environment identifier"
+  type        = string
 }
 
-variable "identity_token" {
-  type      = string
-  ephemeral = true
-}
-
-variable "role_arn" {
-  type = string
-}
-
-variable "default_tags" {
-  description = "A map of default tags to apply to all AWS resources"
-  type        = map(string)
-  default     = {}
+variable "another_input" {
+  description = "value of another input"
+  type        = string
 }
